@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        button {
+            font: 24px "Tisa Pro", sans-serif;
+            font-weight: bold;
+            padding: 5px;
+            background-color: #b0eee3;
+            border: 5px solid #0aad8e;
+            border-radius: 10px;
+            text-shadow: 2px 2px 0 #2cd0af;
+            box-shadow: 2px 2px 0 #0e7862;
+            color: #ffffff;
+            position: relative;
+            top: 0;
+            left: 0;
+            transition: all 80ms linear;
+        }
+
+        button:focus {
+            outline: 0;
+            border-color: #22ccac;
+        }
+
+        button:hover {
+            top: -3px;
+            left: -3px;
+            box-shadow: 5px 5px 0 #0e7862;
+            cursor: pointer;
+        }
+        button:active {
+            top: 2px;
+            left: 2px;
+            box-shadow: 0 0 1px #0e7862;
+        }
+
+        #fireball{
+            /*display: none;*/
+            /*transition: ease;*/
+            transform: rotate(360deg);
+            background-color: red;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            animation: fly 5s;
+        }
+        @keyframes fly {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        #fireButton{
+            font: 24px "Tisa Pro", sans-serif;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+<button>Click me!</button>
+<div id="fireButton">
+    Click me!
+    <div id="fireball"></div>
+</div>
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+</script>
+<script>
+    $("#fireButton").click( function () {
+        $("#fireball").css("display", "block");
+    });
+</script>
+</html>
