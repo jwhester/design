@@ -20,13 +20,15 @@
             font-family: 'Chewy', cursive;
             color: #da3379;
             font-size: 70px;
+            margin-top: 50px;
         }
 
         #warped {position: relative; display: block; width:907px; height:696px;}
 
         #warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
             -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
-        100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
+        100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%;             -webkit-text-stroke: 1px black;
+        }
 
         #warped span{font-size:120px;font-weight:regular;font-style:normal;
             line-height:0.75; white-space:pre; overflow:visible; padding:0px;}
@@ -196,8 +198,43 @@
             width: 16px; height: 24px; left: 404.04px; top: 308.4px;}
         .titleDonut{
             position: absolute;
-            top: 150px;
+            top: 200px;
             height: 250px;
+        }
+        hr{
+            color: white;
+            background-color: white;
+            height: 2px;
+            width: 50%;
+            border: white solid 2px;
+            border-radius: 8px;
+        }
+        h1{
+            font-family: 'Chewy', cursive;
+            color: white;
+            -webkit-text-stroke: 1px black;
+            font-size: 50px;
+        }
+        .container{
+            width: 50%;
+        }
+        .donutContainer{
+            display: none;
+        }
+        button{
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            margin: 10px 50px;
+            background-color: #fcd5dd;
+            border: 5px solid #F9A9C9;
+            text-shadow: 2px 2px 0 black;
+            box-shadow: 2px 2px 0 black;
+
+        }
+        button img{
+            height: 80%;
+            width: 80%;
         }
     </style>
 </head>
@@ -206,5 +243,42 @@
     <span class='w0'>T</span><span class='w1'>h</span><span class='w2'>e</span><span class='w3'> </span><span class='w4'>D</span><span class='w5'>o</span><span class='w6'>n</span><span class='w7'>u</span><span class='w8'>t</span><span class='w9'> </span><span class='w10'>S</span><span class='w11'>h</span><span class='w12'>o</span><span class='w13'>p</span>
 </div>
 <img src="img/donut.svg" alt="" class="titleDonut">
+<div style=" margin-top: -200px; text-align: center">
+<h1>MENU</h1>
+    <button><img src="img/donut.svg" alt=""></button>
+    <button><img src="img/strawberry.svg" alt=""></button>
+    <button><img src="img/chocolate.svg" alt=""></button>
+    <button><img src="img/devil.svg" alt=""></button>
+    <button><img src="img/unicorn.svg" alt=""></button>
+</div>
+<hr>
+<div class="container">
+    <div class="donutContainer">
+        <h2>Donut Name</h2>
+        <p>info about donut</p>
+        <img src="img/" alt="">
+    </div>
+    <div class="donutContainer">
+        <h2>Donut Name</h2>
+        <p>info about donut</p>
+        <img src="img/" alt="">
+    </div>
+    <div class="donutContainer">
+        <h2>Donut Name</h2>
+        <p>info about donut</p>
+        <img src="img/" alt="">
+    </div>
+    <div class="donutContainer">
+        <h2>Donut Name</h2>
+        <p>info about donut</p>
+        <img src="img/" alt="">
+    </div>
+    <div class="donutContainer">
+        <h2>Donut Name</h2>
+        <p>info about donut</p>
+        <img src="img/" alt="">
+    </div>
+
+</div>
 </body>
 </html>
